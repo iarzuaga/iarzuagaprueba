@@ -15,9 +15,9 @@ const MovieList = () => {
   return (
     <div>
       {info?.results?.length > 0 ? (
-        <div className="movie-list-container">
-          {renderMovies()}
-          <Paginator/>
+        <div className="movie-main-container">
+          <div className="movie-list-container">{renderMovies()}</div>
+          <Paginator />
         </div>
       ) : (
         <div className="no-movies">
