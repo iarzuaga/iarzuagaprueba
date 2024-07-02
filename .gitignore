@@ -2,3 +2,4 @@
 /build
 *.tsbuildinfo
 .vscode/
+.env

@@ -1,0 +1,45 @@
+.movie-container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14%;
+  margin: 2%;
+  padding: 1%;
+  background-color: rgb(256, 256, 256, 0.7);
+  border-radius: 10px;
+  img {
+    width: 100%;
+  }
+  div {
+    max-width: 90%;
+    margin: 5px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 19%;
+    margin: 2%;
+    padding: 1%;
+  }
+
+  @media screen and (max-width: 425px) {
+    font-size: 0.8rem;
+    width: 36%;
+    padding: 2%;
+  }
+
+  img {
+    flex: 1;
+  }
+}
+
+.no-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}

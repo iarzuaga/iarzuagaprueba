@@ -1,0 +1,31 @@
+.movie-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  width: 100%;
+  justify-content: center;
+}
+
+.no-movies {
+  background-color: rgb(256, 256, 256, 0.7);
+  margin-top: 40px;
+  width: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+  border-radius: 10px;
+
+  div {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  @media screen and (max-width: 425px) {
+    width: 300px;
+    div {
+      font-size: 0.8rem;
+    }
+  }
+}

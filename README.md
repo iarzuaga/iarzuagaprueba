@@ -1,13 +1,18 @@
 ## Iarzuaga Test
-Movie search site in React for a test
+Movie search site in Reactgit  for a test
 
 ## Getting Started
 
-Clonse repo from git with: 
+Clone repo from git with: 
 git clone https://github.com/iarzuaga/iarzuagaprueba.git
 
-Install dependecies:
+Install dependencies:
 npm install
+
+Create .env file with the next values:
+API_KEY={YOUR_KEY_HERE}
+
+This key can be obtained in https://developer.themoviedb.org/docs/getting-started and following the tutorial.
 
 To run the project in local use:
 npm run start
