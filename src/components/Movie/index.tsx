@@ -7,13 +7,13 @@ const Movie = (props: { movie: MovieT }) => {
   return (
     <div className="movie-container" key={movie.id}>
       {showImage ? (
-        <div className="no-image">Imagen no disponible</div>
+        <div data-testid="no-image" className="no-image">Imagen no disponible</div>
       ) : (
-        <img src={"https://image.tmdb.org/t/p/w300/" + movie.poster_path} />
+        <img data-testid="image" src={"https://image.tmdb.org/t/p/w300/" + movie.poster_path} />
       )}
       <div>
-        <div>{movie.title}</div>
-        <div>{movie.release_date?.slice(0, 4)}</div>
+        <div data-testid="title">{movie.title}</div>
+        <div data-testid="release-date">{movie.release_date?.slice(0, 4)}</div>
       </div>
     </div>
   );

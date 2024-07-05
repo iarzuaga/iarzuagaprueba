@@ -24,7 +24,7 @@ type infoT = {
   total_results: number;
 };
 
-interface IMovieContext {
+type IMovieContext = {
   info: infoT;
   setInfo: React.Dispatch<infoT>;
   loading: boolean;

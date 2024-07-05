@@ -1,13 +1,16 @@
 {
-    "extends": "@tsconfig/recommended/tsconfig.json",
-    "compilerOptions": {
-      "jsx": "react-jsx"
-    },
-    "include": ["./index.d.ts",
-      "next-env.d.ts",
-      "**/*.ts",
-      "**/*.tsx",
-      "**/**/*.ts",
-      "**/**/*.tsx"
-    ],
-  }
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "types": ["node", "jest"]
+  },
+  "include": [
+    "./index.d.ts",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/**/*.ts",
+    "**/**/*.tsx",
+    "jest.config.ts"
+  ]
+}

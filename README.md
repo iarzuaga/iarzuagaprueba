@@ -16,3 +16,12 @@ This key can be obtained in https://developer.themoviedb.org/docs/getting-starte
 
 To run the project in local use:
 npm run start
+
+To run local test use:
+npm run test
+
+For linting:
+npm run lint
+
+For a clean install after modifying package-json:
+npm run clean-install

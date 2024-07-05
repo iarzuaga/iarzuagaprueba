@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import MovieList from "../../components/MovieList";
 import SearchBar from "../../components/SearchBar";
 import { useApi } from "../../hooks";
