@@ -4,6 +4,7 @@
   "description": "React proyect for a test",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts,.tsx",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean-install": "rm -rf node_modules && rm package-lock.json && npm install",
     "start": "webpack serve --mode development --open"
@@ -20,7 +21,10 @@
   "homepage": "https://github.com/iarzuaga/iarzuagaprueba#readme",
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.7",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
     "dotenv-webpack": "^8.1.0",
+    "eslint": "^8.57.0",
     "jest": "^29.7.0",
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
