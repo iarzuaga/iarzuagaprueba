@@ -3,3 +3,4 @@
 *.tsbuildinfo
 .vscode/
 .env
+package-lock.json

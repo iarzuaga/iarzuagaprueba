@@ -1,6 +1,7 @@
+import { MovieT } from "../../context/movieContext";
 import "./index.css";
 
-const Movie = (props: { movie: any }) => {
+const Movie = (props: { movie: MovieT }) => {
   const { movie } = props;
   const showImage = !movie.poster_path;
   return (
@@ -12,7 +13,7 @@ const Movie = (props: { movie: any }) => {
       )}
       <div>
         <div>{movie.title}</div>
-        <div>{movie.release_date.slice(0, 4)}</div>
+        <div>{movie.release_date?.slice(0, 4)}</div>
       </div>
     </div>
   );

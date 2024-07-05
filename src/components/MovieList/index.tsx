@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { MovieContext } from "../../context/movieContext";
+import { MovieContext, MovieT } from "../../context/movieContext";
 import "./index.css";
 import Movie from "../Movie";
 import Paginator from "../Paginator";
@@ -8,7 +8,7 @@ const MovieList = () => {
   const { info } = useContext(MovieContext);
   const renderMovies = () => {
     const movieList = info?.results;
-    return movieList.map((movie: any) => {
+    return movieList?.map((movie: MovieT) => {
       return <Movie movie={movie} key={movie.id} />;
     });
   };
